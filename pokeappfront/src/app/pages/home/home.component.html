@@ -1,0 +1,38 @@
+<h2 class="tituloContacto">PokeApi CHALLENGE</h2>
+<h2 class="tituloContacto">Tenemos nuestra lista de pokemones disponibles en nuestro sistema! </h2>
+
+<hr>
+
+<input type="text" class="form-control" placeholder="Buscar pokemon"
+#txtSearch
+(keyup)="onSearchPokemon(txtSearch.value)"
+/>
+<div class="container">
+<button class="btn btn-primary" (click)="backPage()" >Anterior</button>
+<button class="btn btn-primary" (click)="nextPage()" 
+[disabled]="(pokemons | filtro:page:search).length ===0">Siguiente</button>
+
+</div>
+
+
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <h2 class="tituloContacto">Poke API CHALLENGE</h2>
+        <div class="row">
+            <div *ngFor="let poke of pokemons | filtro:page:search" class="col-md-4">
+                <mat-card>
+                    <mat-card-header>
+                        <mat-card-title>{{poke.nombre}}</mat-card-title>
+                    </mat-card-header>
+                    <img mat-card-image class="imageRedes" [src]="poke.urlImagen" alt="pokemoncito">
+                    <mat-card-content>
+                        <p>{{poke.descripcion}}</p>
+                        <mat-card-actions>
+                            <a class="buttoncard" [routerLink]="['/pokemon', poke.id]"  mat-raised-button color="primary">Ir</a>
+                        </mat-card-actions>
+                    </mat-card-content>
+                </mat-card>
+            </div>           
+        </div>
+    </div>
+</div>

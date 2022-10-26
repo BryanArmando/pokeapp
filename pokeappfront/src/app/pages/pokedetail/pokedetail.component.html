@@ -1,0 +1,25 @@
+<div>
+    <h2 class="tituloContacto">Detalles de pokemon</h2>
+</div>
+<div class="container">
+<div class="card mb-3" style="max-width: 90%;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img [src]="id.urlImagen" class="img-fluid rounded-start" alt="pokemon" style="width: 100%;">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h2 class="card-title">{{id.nombre}}</h2>
+          <h3 class="card-text">Descripcion: {{id.descripcion}}</h3>
+          <h3 class="card-text">Peso: {{id.peso}} kg.</h3>
+          <h3 class="card-text">Altura: {{id.altura}} cm.</h3>
+          <h3 class="card-text">Tipo: {{id.tipo.nombreTipo}}</h3>
+          <h3 class="card-text">Habilidades: {{id.habilidades}}</h3>
+          <a [routerLink]="'/'" class="btn btn-primary">
+            Home
+        </a>
+        </div>
+      </div>
+    </div>
+</div>
+</div>

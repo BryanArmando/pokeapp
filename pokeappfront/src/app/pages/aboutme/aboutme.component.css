@@ -1,0 +1,8 @@
+.cardangular {
+    max-width: 400px;
+  }
+  
+  .header-image {
+    background-image: url('https://avatars.githubusercontent.com/u/66704761?v=4');
+    background-size: cover;
+  }
