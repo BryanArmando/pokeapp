@@ -10,11 +10,11 @@
 > ######  [Endpoints POKEAPI](https://pokeappkrug.herokuapp.com/doc/swagger-ui/index.html)
 
 
-## Accesso al fronend desarrollado en Angular y desplegado en firebase
+## Accesso al frontend desarrollado en Angular y desplegado en firebase
 
 > ######  [Fontend POKEAPI](https://apppokeapifront.web.app/)
 
-## Porceso de creación de proyecto (Back-end)
+## Proceso de creación de proyecto (Back-end)
 
 1. El lenguaje de programación elegido para el desarrollo fue Java 11 el cual lo uso mediante Spring Framework (SpringBoot)
 
@@ -26,7 +26,7 @@
 
 5. Finalmente se ha desplegado el sistema en heroku y se ha realizado una conexion hacia una base de datos alojada en AlwaysData para la obtención de datos.  
 
-## Porceso de creación de proyecto (Front-end)
+## Proceso de creación de proyecto (Front-end)
 
 1. Para la realización de la parte visual he empleado Angular 14 
 
